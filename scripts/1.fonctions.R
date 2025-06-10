@@ -4,6 +4,20 @@ decennie_a_partir_annee <- function(ANNEE) {
 }
 
 # fonction de stat agregee
+#' Title
+#'
+#' @param a 
+#' @param b 
+#' @param ... 
+#'
+#' @returns
+#' @export
+#'
+#' @examples
+#' calculer_stats(rnorm(10))
+#' calculer_stats(rnorm(10), "ecart-type")
+#' calculer_stats(rnorm(10), "variance")
+
 calculer_stats <- function(a, b = "moyenne", ...) {
   if (b == "moyenne") {
     x <- mean(a, na.rm = T, ...)
@@ -16,6 +30,4 @@ calculer_stats <- function(a, b = "moyenne", ...) {
 }
 
 
-calculer_stats(rnorm(10))
-calculer_stats(rnorm(10), "ecart-type")
-calculer_stats(rnorm(10), "variance")
+
